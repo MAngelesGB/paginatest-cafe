@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 300px;
+    text-align: center;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+
+.btn-registrar{
+    padding: 5px;
+}
