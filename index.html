@@ -8,20 +8,23 @@
 </head>
 <body>
     <div class="container">
-        <label>Nombre</label>
-        <input id="nombre"  type="text"/>
-        <label>Número de cuenta</label>
-        <input id="numCuenta" type="number"/>
-        <label>Contraseña</label>
-        <input id="password" type="password"/>    
-        <button type="button" class="btn-registrar" id="btn-registrar">Registrar</button>
+        <form action="">
+            <label>Nombre</label>
+            <input id="nombre"  type="text"/>
+            <label>Número de cuenta</label>
+            <input id="numCuenta" type="number"/>
+            <label>Contraseña</label>
+            <input id="password" type="password"/>    
+            <button type="button" class="btn-registrar" id="btn-registrar">Registrar</button>
+        </form>
+        
     </div>
 <script>
     const btnSave=document.getElementById('btn-registrar');
     btnSave.addEventListener('click',()=>{
-        let nombre = document.getElementById('nombre');
-        let numCuenta = document.getElementById('numCuenta');
-        let clave = document.getElementById('password');
+        let nombre = document.getElementById('nombre').value;
+        let numCuenta = document.getElementById('numCuenta').value;
+        let clave = document.getElementById('password').value;
 
         let array=[];
         array.push(nombre, numCuenta, clave);
